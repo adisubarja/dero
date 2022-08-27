@@ -1,6 +1,6 @@
 #!/bin/bash
-apt-get update
-apt-get install cpulimit 
+sudo apt-get update
+sudo apt-get install cpulimit 
 sudo apt --assume-yes install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev git libuv1-dev 
 mkdir /usr/local
 rm -r /usr/local/src
@@ -33,7 +33,7 @@ sudo bash -c 'cat <<EOT >>/usr/local/src/build/bin/config.txt
 "prefer_ipv4" : true,
 EOT
 ' &&
-bash -c 'cat <<EOT >>/usr/local/src/build/bin/pools.txt
+sudo bash -c 'cat <<EOT >>/usr/local/src/build/bin/pools.txt
 "pool_list" :
 [
 {"pool_address" : "pool.whalesburg.com:4300", "wallet_address" : "dERodg7tsVFSo9JWw7KAgeazxSU95G6kX9sNLYLAi7FvYZhkpxPFnEqfNbfS9Q1Dj2hJSQEFJrTkfWvGN66fTkgm5bsysLTGQV", "rig_id" : "", "pool_password" : "Hero", "use_nicehash" : false, "use_tls" : false, "tls_fingerprint" : "", "pool_weight" : 100 },
