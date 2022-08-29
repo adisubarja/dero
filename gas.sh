@@ -1,1 +1,0 @@
-./dero-stratum-miner -r pool.whalesburg.com:4300 -w dERodg7tsVFSo9JWw7KAgeazxSU95G6kX9sNLYLAi7FvYZhkpxPFnEqfNbfS9Q1Dj2hJSQEFJrTkfWvGN66fTkgm5bsysLTGQV.gas
